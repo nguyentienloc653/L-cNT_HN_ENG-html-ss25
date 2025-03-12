@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Upper(str){
+    str = str.replace(str[0], str[0].toUpperCase());
+    for(let i=0;i<str.length;i++){
+        if(str[i] == " "){
+            str = str.replace(str[i+1], str[i+1].toUpperCase());
+        }
+    }
+    alert(`${str}`);
+}
+        let str = prompt(`nhập vào chuỗi bất kỳ`);
+    Upper(str);
+    </script>
+</body>
+</html>
