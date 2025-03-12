@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function check(a){
+    let check = 0;
+        for(let i=0;i<a.length;i++){
+        if(a[i] % 2 == 0){
+                alert(`phần tử chãn : ${a[i]}`);
+            check = 1;
+        }
+    }
+        if(!check){
+            alert(`không có phần tử chẵn`);
+    }
+}
+    let a = [1,4,7,5,2];
+            check(a);
+       
+    </script>
+</body>
+</html>
