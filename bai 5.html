@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(a){
+        let cnt=0;
+        for(let i=0;i<a.length;i++){
+            if(a[i] < 0 || a[i] / Math.round(a[i]) != 1){
+            }else{
+            cnt++;
+        }
+    }
+        if(cnt == 0){
+                console.log('không có số nguyên dương');
+    }
+        return cnt;
+}
+        let a = [1.2, 6, -2, 7, -1];
+                console.log(`số lương của số nguyên dương hàm a là : ${check(a)}`);
+    </script>
+</body>
+</html>
